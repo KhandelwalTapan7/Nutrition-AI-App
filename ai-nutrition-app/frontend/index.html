@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriAI - Personalized Nutrition & Health Surveillance</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-apple-alt"></i>
+                <h1>NutriAI</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+                <a href="pages/dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="pages/nutrition.html"><i class="fas fa-utensils"></i> Nutrition</a>
+                <a href="pages/community.html"><i class="fas fa-users"></i> Community</a>
+                <a href="pages/login.html"><i class="fas fa-user"></i> Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>AI-Powered Personalized Nutrition & Community Health Surveillance</h2>
+            <p>Revolutionizing public health management through artificial intelligence and mobile technology</p>
+            <div class="hero-buttons">
+                <a href="pages/login.html" class="btn-primary">Get Started</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Healthy Food">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Research Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <i class="fas fa-brain"></i>
+                <h3>AI-Powered Analysis</h3>
+                <p>Advanced machine learning algorithms for personalized nutritional assessment</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile Integration</h3>
+                <p>Real-time health monitoring through mobile app technology</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Community Surveillance</h3>
+                <p>Population health trend analysis and monitoring</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Privacy Focused</h3>
+                <p>Secure data handling with ethical considerations</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Analysis -->
+    <section class="demo-section">
+        <h2>Try Our AI Nutrition Analyzer</h2>
+        <div class="demo-container">
+            <div class="demo-input">
+                <h3>Enter Your Meal</h3>
+                <div class="food-input">
+                    <input type="text" id="food-item" placeholder="e.g., apple, chicken breast, rice...">
+                    <button onclick="addFoodItem()"><i class="fas fa-plus"></i> Add</button>
+                </div>
+                <div id="food-list" class="food-list"></div>
+                <button onclick="analyzeMeal()" class="btn-analyze">
+                    <i class="fas fa-search"></i> Analyze with AI
+                </button>
+            </div>
+            <div class="demo-results">
+                <h3>AI Analysis Results</h3>
+                <div id="analysis-results" class="results-container">
+                    <p class="placeholder">Your nutritional analysis will appear here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Objectives -->
+    <section class="objectives">
+        <h2>Research Objectives</h2>
+        <div class="objectives-list">
+            <div class="objective">
+                <span class="number">1</span>
+                <p>Develop AI-based mobile application for personalized nutritional evaluation</p>
+            </div>
+            <div class="objective">
+                <span class="number">2</span>
+                <p>Implement community health surveillance capabilities</p>
+            </div>
+            <div class="objective">
+                <span class="number">3</span>
+                <p>Analyze nutritional status assessment accuracy</p>
+            </div>
+            <div class="objective">
+                <span class="number">4</span>
+                <p>Investigate barriers and opportunities in public health integration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NutriAI Research</h3>
+                <p>PhD Research Project - Artificial Intelligence in Healthcare</p>
+                <p>Personalized Nutrition & Community Health Surveillance System</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: research@nutriai.edu</p>
+                <p>University: University Research Department</p>
+            </div>
+            <div class="footer-section">
+                <h3>Ethical Considerations</h3>
+                <p>Data Privacy Protected</p>
+                <p>IRB Approved Research</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 NutriAI Research Project. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

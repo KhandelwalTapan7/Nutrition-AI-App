@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NutriAI</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-apple-alt"></i>
+                <h1>NutriAI</h1>
+            </div>
+            <div class="nav-links">
+                <a href="../index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a>
+                <a href="login.html" class="active"><i class="fas fa-user"></i> Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <h2>Login to NutriAI</h2>
+        <p>Access personalized nutrition analysis and health monitoring</p>
+        
+        <form class="login-form" onsubmit="event.preventDefault(); handleLogin();">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        
+        <div class="login-options">
+            <p>Demo Credentials:</p>
+            <p>Email: demo@nutriai.com</p>
+            <p>Password: demo123</p>
+        </div>
+        
+        <div class="research-info">
+            <h3>Research Access</h3>
+            <p>This platform is part of a PhD research project on AI-based nutrition evaluation and community health surveillance.</p>
+            <p>All data is anonymized and used for research purposes only.</p>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple validation
+            if (email && password) {
+                // For demo purposes, accept any login
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Please enter both email and password');
+            }
+        }
+    </script>
+</body>
+</html>
